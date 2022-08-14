@@ -1,0 +1,103 @@
+@font-face {
+  font-family: Diatype;
+  src: url(./fonts/ABCDiatype-Regular.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Diatype;
+  src: url(./fonts/ABCDiatype-Medium.woff2) format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Diatype;
+  src: url(./fonts/ABCDiatype-Bold.woff2) format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  font-family: "Diatype", BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  font-family: "Diatype", "Roboto", "Helvetica", "Arial", sans-serif !important;
+}
+
+/* TODO consolidate popup dimensions */
+html,
+body,
+#root {
+  min-width: 375px;
+  min-height: 600px;
+  height: 100%;
+}
+
+.logo-img {
+  width: 50px;
+  height: 50px;
+  /*margin: 0 0 0 8px;*/
+}
+
+.MuiLink-root:hover {
+  color: #14F195!important;
+}
+
+.MuiButton-outlinedPrimary:hover, .MuiButton-outlinedPrimary:active {
+  color: #14F195!important;
+  border-color: #14F195!important;
+}
+
+.MuiIconButton-root:hover, .MuiIconButton-root:active {
+  color: #14F195!important;
+}
+
+/* TODO consolidate popup dimensions */
+@media screen and (max-height: 700px) {
+  html,
+  body,
+  #root {
+    max-height: 600px;
+  }
+}
+
+/* TODO consolidate popup dimensions */
+@media screen and (max-width: 450px) {
+  html,
+  body,
+  #root {
+    max-width: 375px;
+  }
+  html::-webkit-scrollbar,
+  body::-webkit-scrollbar,
+  #root::-webkit-scrollbar {
+    width: 1px;
+    background: transparent;
+  }
+  .navbar > .MuiToolbar-root {
+    padding-right: 0;
+  }
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  background-color: #212529 !important;
+}
